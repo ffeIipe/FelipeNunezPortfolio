@@ -33,7 +33,7 @@ nav ul li, a img{
     justify-content: space-around;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: 64px;
+    grid-column-gap: 16px;
     justify-content: center;
 }
 nav ul li{
@@ -89,17 +89,16 @@ h1{
     padding-top: 16px;
     flex-direction: column; 
 }
-.ubicacion{
-    padding-left: 64px;
-    padding-top: 16px;
-    flex-direction: column;
-}
 .interfaz-ubicacion{
-    padding-top: 128px;
-    padding-left: 64px;
-    padding-bottom: 128px;
+    padding-top: 64px;
     display: flex;
     justify-content: center;
+}
+.ubicacion{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    padding: 64px;
 }
 .precio{
     font-weight: bolder;
@@ -112,7 +111,6 @@ h1{
     border-color: black;
 }
 @media screen and (max-width: 768px){
-    
     .clasificaciones-prendas {
         flex-flow: column;
         padding: 0;
@@ -140,6 +138,7 @@ h1{
     .contenedor-items{
         display: grid;
         grid-template-columns: 1fr 1fr;
+        grid-column-gap: 16px;
     }  
     .interfaz-page{
         padding: 0;
@@ -165,6 +164,14 @@ h1{
         padding-top: 64px;
         justify-content: flex-start;
     }
+    .ubicacion-image{
+        height: 50%;
+    }
+    footer{
+        font-size: 0.7em;
+        justify-content: center;
+    }
+
 }
 @media screen and (max-width: 480px) {
     .clasificaciones-prendas {
@@ -200,8 +207,16 @@ h1{
     }
     .product-image{
         width: 30%;
-        height: 30%;
+        height: 30%; 
     } 
+    .interfaz-ubicacion{
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+    }
+    .ubicacion-image{
+       padding: 0px;
+       margin: 0;
+    }
+    
 }
-
-
