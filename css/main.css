@@ -16,15 +16,22 @@
     border: 1px;
     border-color: black;
     border-style: solid;
+    
 }
 .clasificaciones-prendas div a{
+    transition-property: all;
+    transition-delay: 0ms;
+    transition-duration: 50ms;
+    transition-timing-function: ease-in-out;
     font-size: 1.3em;
     text-decoration: none;
     font-size: large;
     color: black;
     font-weight: bolder;
 }
-
+.clasificaciones-prendas div:hover{
+    transform: scale(1.1);
+}
 nav ul li, a img{
     text-decoration: none;
     list-style-type: none;  
@@ -33,7 +40,7 @@ nav ul li, a img{
     justify-content: space-around;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: 16px;
+    grid-column-gap: 64px;
     justify-content: center;
 }
 nav ul li{
@@ -43,8 +50,7 @@ nav ul li{
     font-family: 'Prompt', sans-serif;
 }
 nav ul li a{
-    display: flex;
-    
+    display: flex; 
 }
 footer{
     
@@ -109,6 +115,15 @@ h1{
     border: 1px;
     border-style: solid;
     border-color: black;
+    transition-property: all;
+    transition-delay: 0ms;
+    transition-duration: 50ms;
+    transition-timing-function: ease-in-out;
+}
+.border:hover{
+    transform: scale(1.1);
+    border-color: grey;
+
 }
 @media screen and (max-width: 768px){
     .clasificaciones-prendas {
@@ -203,7 +218,7 @@ h1{
     .contenedor-items{
         display: grid;
         grid-template-columns: 1fr;
-        padding: 8px;
+        padding: 16px;
     }
     .product-image{
         width: 30%;
@@ -215,7 +230,7 @@ h1{
         justify-content: center;
     }
     .ubicacion-image{
-       padding: 0px;
+       padding: 0;
        margin: 0;
     }
     
