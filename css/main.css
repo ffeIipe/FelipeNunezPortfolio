@@ -23,7 +23,6 @@
     font-size: large;
     color: black;
     font-weight: bolder;
-    
 }
 
 nav ul li, a img{
@@ -78,6 +77,8 @@ h1{
     font-family: 'Prompt', sans-serif;
 }
 .interfaz-page{
+    width: auto;
+    height: auto;
     padding-top: 64px;
     padding-left: 64px;
     padding-bottom: 64px;
@@ -111,6 +112,7 @@ h1{
     border-color: black;
 }
 @media screen and (max-width: 768px){
+    
     .clasificaciones-prendas {
         flex-flow: column;
         padding: 0;
@@ -121,10 +123,12 @@ h1{
     .top-logo {
         flex-flow: column;
         padding: 0;
+        padding-top: 32px;
         text-align: center;
     }
     .content-page{
         flex-flow: column;
+        margin-top: 64px;
         padding: 0;
         justify-content: center;
     }
@@ -139,14 +143,27 @@ h1{
     }  
     .interfaz-page{
         padding: 0;
+        margin: 0;
         flex-flow: column;
+        justify-content: center;
     }
     .caracteristicas{
         padding: 0;
         margin: 0;
+        padding-top: 16px;
     }
     div h1{
         font-size: 1em;
+        padding: 8px;
+    }
+    .product-image{
+        width: 50%;
+        height: 50%;
+        padding: 32px;
+    }
+    .descripcion{
+        padding-top: 64px;
+        justify-content: flex-start;
     }
 }
 @media screen and (max-width: 480px) {
@@ -160,10 +177,12 @@ h1{
     .top-logo {
         flex-flow: column;
         padding: 0;
+        padding-top: 32px;
         text-align: center;
     }
     .content-page{
         flex-flow: column;
+        margin-top: 64px;
         padding: 0;
         justify-content: center;
     }
@@ -178,9 +197,11 @@ h1{
         display: grid;
         grid-template-columns: 1fr;
         padding: 8px;
-    }  
-    
+    }
+    .product-image{
+        width: 30%;
+        height: 30%;
+    } 
 }
-
 
 
