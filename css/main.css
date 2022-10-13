@@ -53,7 +53,6 @@ nav ul li a{
     display: flex; 
 }
 footer{
-    
     font-size: larger;
     font-weight: 700;
     display: flex;
@@ -122,8 +121,6 @@ h1{
 }
 .border:hover{
     transform: scale(1.1);
-    border-color: grey;
-
 }
 @media screen and (max-width: 768px){
     .clasificaciones-prendas {
