@@ -1,91 +1,66 @@
-.top-logo {
+h1 {
+  font-size: 2em;
+  display: flex;
+  flex-direction: row; }
+
+.font {
+  font-family: "Prompt", sans-serif; }
+
+nav .logo a {
   padding: 32px;
   display: flex;
   justify-content: center; }
 
-.clasificaciones-prendas {
-  padding: 16px;
+nav .nav-bar {
+  padding: 8px;
   display: flex;
   flex-direction: row;
   flex-flow: row;
   justify-content: space-around;
   list-style-type: none;
   text-decoration: none;
-  color: black;
-  font-weight: bolder;
   border: 1px;
-  border-color: black;
-  border-style: solid; }
+  border-style: solid;
+  border-color: black; }
+  nav .nav-bar div a {
+    transition-property: all;
+    transition-delay: 0ms;
+    transition-duration: 50ms;
+    transition-timing-function: ease-in-out;
+    font-size: 1.3em;
+    text-decoration: none;
+    font-size: large;
+    color: black;
+    font-weight: bolder; }
+  nav .nav-bar div:hover {
+    transform: scale(1.1); }
 
-.clasificaciones-prendas div a {
-  transition-property: all;
-  transition-delay: 0ms;
-  transition-duration: 50ms;
-  transition-timing-function: ease-in-out;
-  font-size: 1.3em;
-  text-decoration: none;
-  font-size: large;
-  color: black;
-  font-weight: bolder; }
-
-.clasificaciones-prendas div:hover {
-  transform: scale(1.1); }
-
-nav ul li, a img {
-  text-decoration: none;
-  list-style-type: none; }
-
-.contenedor-items {
+nav div ul {
   justify-content: space-around;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 64px;
   justify-content: center; }
-
-nav ul li {
-  display: inline-block;
-  padding: 32px;
-  border: 16px;
-  font-family: 'Prompt', sans-serif; }
-
-nav ul li a {
-  display: flex; }
+  nav div ul a li {
+    display: inline-block;
+    padding: 32px;
+    border: 16px;
+    font-family: 'Prompt', sans-serif; }
+    nav div ul a li img {
+      text-decoration: none;
+      list-style-type: none; }
 
 footer {
+  margin: 0px;
   font-size: larger;
   font-weight: 700;
   display: flex;
   justify-content: center; }
 
-h1 {
-  font-size: 2em;
-  display: flex;
-  flex-direction: row; }
-
-.content-home {
-  display: flex;
-  justify-content: center;
-  padding: 64px; }
-
-.content-page {
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 20px;
-  padding-right: 20px;
-  display: flex;
-  max-width: 1240px;
-  min-width: 922px;
-  justify-content: center; }
-
-.font {
-  font-family: 'Prompt', sans-serif; }
-
 .interfaz-page {
   width: auto;
   height: auto;
-  padding-top: 64px;
-  padding-left: 64px;
-  padding-bottom: 64px;
+  padding: 64px;
   display: flex; }
 
 .caracteristicas {
@@ -93,7 +68,7 @@ h1 {
   padding-top: 16px;
   flex-direction: column; }
 
-.interfaz-ubicacion {
+.seccion-ubicacion {
   padding-top: 64px;
   display: flex;
   justify-content: center; }
@@ -122,13 +97,13 @@ h1 {
   transform: scale(1.1); }
 
 @media screen and (max-width: 768px) {
-  .clasificaciones-prendas {
+  .nav-bar {
     flex-flow: column;
     padding: 0;
     border-width: 0;
     text-align: center;
     font-size: 2em; }
-  .top-logo {
+  .logo {
     flex-flow: column;
     padding: 0;
     padding-top: 32px;
@@ -172,13 +147,13 @@ h1 {
     justify-content: center; } }
 
 @media screen and (max-width: 480px) {
-  .clasificaciones-prendas {
+  .nav-bar {
     flex-flow: column;
     padding: 0;
     border-width: 0;
     text-align: center;
     font-size: 2em; }
-  .top-logo {
+  .logo {
     flex-flow: column;
     padding: 0;
     padding-top: 32px;
@@ -201,7 +176,7 @@ h1 {
   .product-image {
     width: 30%;
     height: 30%; }
-  .interfaz-ubicacion {
+  .seccion-ubicacion {
     display: flex;
     flex-flow: column;
     justify-content: center; }

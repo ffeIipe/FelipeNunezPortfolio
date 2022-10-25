@@ -1,0 +1,36 @@
+nav{
+    .logo{
+        a{
+            padding: $spacing*4;
+            display: flex;
+            justify-content: center;
+        }
+    }
+    .nav-bar{
+        padding: $spacing;
+        display: flex;
+        flex-direction: row;
+        flex-flow: row;
+        justify-content: space-around;
+        list-style-type: none;
+        text-decoration: none;
+        border: 1px;
+        border-style: solid;
+        border-color: black;
+
+        div a{
+            transition-property: all;
+            transition-delay: 0ms;
+            transition-duration: 50ms;
+            transition-timing-function: ease-in-out;
+            font-size: 1.3em;
+            text-decoration: none;
+            font-size: large;
+            color: black;
+            font-weight: bolder;
+        }
+        div:hover{
+            transform: scale(1.1);
+        }
+    }
+}
