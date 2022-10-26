@@ -90,6 +90,7 @@ footer {
 
 .seccion-ubicacion {
   padding-top: 64px;
+  flex-direction: row;
   display: flex;
   justify-content: center; }
   .seccion-ubicacion .ubicacion {
@@ -147,26 +148,35 @@ h1 {
     grid-column-gap: 16px; }
   footer {
     font-size: 0.7em;
-    justify-content: center; } }
+    justify-content: center; }
+  .seccion-ubicacion {
+    display: flex;
+    flex-flow: column;
+    justify-content: center; }
+  .ubicacion-image {
+    padding: 16px;
+    margin: 16px; } }
 
 @media screen and (max-width: 480px) {
+  nav .logo {
+    flex-flow: column;
+    padding: 0;
+    padding-top: 32px;
+    text-align: center; }
   nav .nav-bar {
     flex-flow: column;
     padding: 0;
     border-width: 0;
     text-align: center;
     font-size: 8px; }
-  .logo {
-    flex-flow: column;
+  .content-page .caracteristicas {
     padding: 0;
-    padding-top: 32px;
-    text-align: center; }
-  .content-page {
-    flex-flow: column;
-    margin-top: 64px;
-    padding: 0;
-    justify-content: center;
-    margin: 8px; }
+    margin: 0;
+    padding-top: 16px; }
+    .content-page .caracteristicas h2 {
+      font-size: large; }
+    .content-page .caracteristicas p {
+      font-size: medium; }
   .contenedor-items {
     display: grid;
     grid-template-columns: 1fr;
@@ -176,5 +186,5 @@ h1 {
     flex-flow: column;
     justify-content: center; }
   .ubicacion-image {
-    padding: 0;
-    margin: 0; } }
+    padding: 16px;
+    margin: 16px; } }

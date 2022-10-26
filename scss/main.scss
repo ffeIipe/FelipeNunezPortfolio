@@ -66,20 +66,29 @@ h1{
         grid-template-columns: 1fr 1fr;
         grid-column-gap: 16px;
     } 
-    
-    
-    
-    
-    
-
     footer{
         font-size: 0.7em;
         justify-content: center;
     }
-
+    .seccion-ubicacion{
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+    }
+    .ubicacion-image{
+       padding: $spacing*2;
+       margin: $spacing*2;
+    }
 }
-@media screen and (max-width: 480px) {
+
+@media screen and (max-width: 480px){
     nav{
+        .logo {
+            flex-flow: column;
+            padding: 0;
+            padding-top: 32px;
+            text-align: center;
+        }
         .nav-bar {
             flex-flow: column;
             padding: 0;
@@ -88,20 +97,19 @@ h1{
             font-size: $spacing;
         }
     }
-    .logo {
-        flex-flow: column;
-        padding: 0;
-        padding-top: 32px;
-        text-align: center;
-    }
     .content-page{
-        flex-flow: column;
-        margin-top: 64px;
-        padding: 0;
-        justify-content: center;
-        margin: $spacing;
+        .caracteristicas{
+            h2{
+                font-size: large;
+            }
+            p{
+                font-size: medium;
+            }
+            padding: 0;
+            margin: 0;
+            padding-top: 16px;
+        }
     }
-    
     .contenedor-items{
         display: grid;
         grid-template-columns: 1fr;
@@ -113,8 +121,14 @@ h1{
         justify-content: center;
     }
     .ubicacion-image{
-       padding: 0;
-       margin: 0;
-    }
+        padding: $spacing*2;
+        margin: $spacing*2;
+     }
+} 
     
-}
+    
+    
+    
+    
+    
+  

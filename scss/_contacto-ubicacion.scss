@@ -1,5 +1,6 @@
 .seccion-ubicacion{
     padding-top: $spacing*8;
+    flex-direction: row;
     @include flex;
 
     .ubicacion{
@@ -7,5 +8,8 @@
         flex-flow: row;
         justify-content: center;
         padding: $spacing*8;
+    }
+    .ubicacion-image{
+
     }
 }
