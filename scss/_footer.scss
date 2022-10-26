@@ -2,6 +2,5 @@ footer{
     margin: 0px;
     font-size: larger;
     font-weight: 700;
-    display: flex;
-    justify-content: center;
+    @include flex;
 }

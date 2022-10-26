@@ -1,104 +1,77 @@
 @import "variables";
-@import "home";
-@import "nav";
+@import "nav-bar";
+@import "prendas";
 @import "footer";
-
-.interfaz-page{
-    width: auto;
-    height: auto;
-    padding: $spacing*8;
-    display: flex;
-}
-.caracteristicas{
-    padding-left: 64px;
-    padding-top: 16px;
-    flex-direction: column; 
-}
-.seccion-ubicacion{
-    padding-top: 64px;
-    display: flex;
-    justify-content: center;
-}
-.ubicacion{
-    display: flex;
-    flex-flow: row;
-    justify-content: center;
-    padding: 64px;
-}
-.precio{
-    font-weight: bolder;
-    font-size: large;
+@import "interfaz-compra";
+@import "contacto-ubicacion";
+button{
+    border-radius: 5px !important;
 }
 .border{
-    margin-bottom: 32px;
-    border: 1px;
-    border-style: solid;
-    border-color: black;
-    transition-property: all;
-    transition-delay: 0ms;
-    transition-duration: 50ms;
-    transition-timing-function: ease-in-out;
+    border-color: black !important;
+
+}
+h1{
+    margin: $spacing*2 !important;
 }
 .border:hover{
     transform: scale(1.1);
 }
+
 @media screen and (max-width: 768px){
-    .nav-bar {
-        flex-flow: column;
-        padding: 0;
-        border-width: 0;
-        text-align: center;
-        font-size: 2em;
+
+    div h1{
+        font-size: 1em;
+        padding: 8px;
     }
-    .logo {
-        flex-flow: column;
-        padding: 0;
-        padding-top: 32px;
-        text-align: center;
+
+    nav {
+        .logo {
+            flex-flow: column;
+            padding: 0;
+            padding-top: 32px;
+            text-align: center;
+        }
+        .nav-bar {
+            text-align: center;
+            font-size: 1em;;
+        }
     }
     .content-page{
         flex-flow: column;
         margin-top: 64px;
         padding: 0;
-        justify-content: center;
+        justify-content: center; 
+        .interfaz-page{
+            margin: 0;
+            flex-flow: column;
+            justify-content: center;
+            .product-image{
+                width: 80%;
+                height: 80%;
+            }
+            .caracteristicas{
+                padding: 0;
+                margin: 0;
+                padding-top: 16px;
+            }
+        }
     }
-    h1{
-        border-width: 1px;
-        border-color: black;
-        border-style: solid;
+    .descripcion{
+        padding: $spacing*2;
+        justify-content: flex-start;
     }
     .contenedor-items{
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-column-gap: 16px;
-    }  
-    .interfaz-page{
-        padding: 0;
-        margin: 0;
-        flex-flow: column;
-        justify-content: center;
-    }
-    .caracteristicas{
-        padding: 0;
-        margin: 0;
-        padding-top: 16px;
-    }
-    div h1{
-        font-size: 1em;
-        padding: 8px;
-    }
-    .product-image{
-        width: 50%;
-        height: 50%;
-        padding: 32px;
-    }
-    .descripcion{
-        padding-top: 64px;
-        justify-content: flex-start;
-    }
-    .ubicacion-image{
-        height: 50%;
-    }
+    } 
+    
+    
+    
+    
+    
+
     footer{
         font-size: 0.7em;
         justify-content: center;
@@ -106,12 +79,14 @@
 
 }
 @media screen and (max-width: 480px) {
-    .nav-bar {
-        flex-flow: column;
-        padding: 0;
-        border-width: 0;
-        text-align: center;
-        font-size: 2em;
+    nav{
+        .nav-bar {
+            flex-flow: column;
+            padding: 0;
+            border-width: 0;
+            text-align: center;
+            font-size: $spacing;
+        }
     }
     .logo {
         flex-flow: column;
@@ -124,23 +99,14 @@
         margin-top: 64px;
         padding: 0;
         justify-content: center;
+        margin: $spacing;
     }
-    h1{
-        border-width: 1px;
-        border-color: black;
-        border-style: solid;
-        padding: 8px;
-        justify-content: flex-start;
-    }
+    
     .contenedor-items{
         display: grid;
         grid-template-columns: 1fr;
         padding: 16px;
     }
-    .product-image{
-        width: 30%;
-        height: 30%; 
-    } 
     .seccion-ubicacion{
         display: flex;
         flex-flow: column;

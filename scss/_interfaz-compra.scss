@@ -1,0 +1,29 @@
+.content-page{
+    div{
+        width: auto;
+        height: auto;
+        padding: $spacing*8;
+        display: flex;
+
+        img{
+            height: max-content;
+            width: max-content;
+        }
+
+        div{
+            padding-left: $spacing*8;
+            padding-top: $spacing*2;
+            flex-direction: column; 
+        }
+        .precio{
+            font-weight: bolder;
+            font-size: large;
+        }
+        button{
+            height: max-content;
+            width: max-content;
+            border-width: 1px;
+            border-radius: $spacing/2;        
+        }
+    }
+}

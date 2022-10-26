@@ -1,0 +1,11 @@
+.seccion-ubicacion{
+    padding-top: $spacing*8;
+    @include flex;
+
+    .ubicacion{
+        display: flex;
+        flex-flow: row;
+        justify-content: center;
+        padding: $spacing*8;
+    }
+}

@@ -2,12 +2,12 @@ nav{
     .logo{
         a{
             padding: $spacing*4;
-            display: flex;
-            justify-content: center;
+            @include flex;
         }
     }
     .nav-bar{
-        padding: $spacing;
+        padding: $spacing*2;
+        border-radius: 5px;
         display: flex;
         flex-direction: row;
         flex-flow: row;
@@ -17,6 +17,7 @@ nav{
         border: 1px;
         border-style: solid;
         border-color: black;
+        margin: $spacing;
 
         div a{
             transition-property: all;
