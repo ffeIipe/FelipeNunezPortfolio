@@ -10,7 +10,11 @@ nav .boton, nav .boton-primario, nav .boton-secundario {
   border: 1px;
   padding: 8px;
   margin: 8px;
-  border: solid 1px; }
+  border: solid 1px;
+  transition-property: all;
+  transition-delay: 0ms;
+  transition-duration: 50ms;
+  transition-timing-function: ease-in-out; }
 
 nav .boton-primario {
   border-color: #dee2e6; }
@@ -20,8 +24,13 @@ nav .boton-secundario {
 
 nav .logo a {
   padding: 32px;
+  padding-top: 0;
   display: flex;
   justify-content: center; }
+
+nav .boton:hover, nav .boton-primario:hover, nav .boton-secundario:hover {
+  transform: scale(1.1);
+  background-color: #bbbbbb; }
 
 nav .nav-bar {
   padding: 16px;
@@ -111,18 +120,6 @@ footer {
     justify-content: center;
     padding: 64px; }
 
-button {
-  border-radius: 5px !important; }
-
-.border {
-  border-color: black !important; }
-
-h1 {
-  margin: 16px !important; }
-
-.border:hover {
-  transform: scale(1.1); }
-
 @media screen and (max-width: 768px) {
   div h1 {
     font-size: 1em;
@@ -200,3 +197,15 @@ h1 {
   .ubicacion-image {
     padding: 16px;
     margin: 16px; } }
+
+button {
+  border-radius: 5px !important; }
+
+.border {
+  border-color: black !important; }
+
+h1 {
+  margin: 16px !important; }
+
+.border:hover {
+  transform: scale(1.1); }

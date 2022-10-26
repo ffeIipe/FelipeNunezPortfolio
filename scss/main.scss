@@ -4,6 +4,8 @@
 @import "footer";
 @import "interfaz-compra";
 @import "contacto-ubicacion";
+@import "media-queries";
+
 button{
     border-radius: 5px !important;
 }
@@ -18,113 +20,7 @@ h1{
     transform: scale(1.1);
 }
 
-@media screen and (max-width: 768px){
 
-    div h1{
-        font-size: 1em;
-        padding: 8px;
-    }
-
-    nav {
-        .logo {
-            flex-flow: column;
-            padding: 0;
-            padding-top: 32px;
-            text-align: center;
-        }
-        .nav-bar {
-            text-align: center;
-            font-size: 1em;;
-        }
-    }
-    .content-page{
-        flex-flow: column;
-        margin-top: 64px;
-        padding: 0;
-        justify-content: center; 
-        .interfaz-page{
-            margin: 0;
-            flex-flow: column;
-            justify-content: center;
-            .product-image{
-                width: 80%;
-                height: 80%;
-            }
-            .caracteristicas{
-                padding: 0;
-                margin: 0;
-                padding-top: 16px;
-            }
-        }
-    }
-    .descripcion{
-        padding: $spacing*2;
-        justify-content: flex-start;
-    }
-    .contenedor-items{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-column-gap: 16px;
-    } 
-    footer{
-        font-size: 0.7em;
-        justify-content: center;
-    }
-    .seccion-ubicacion{
-        display: flex;
-        flex-flow: column;
-        justify-content: center;
-    }
-    .ubicacion-image{
-       padding: $spacing*2;
-       margin: $spacing*2;
-    }
-}
-
-@media screen and (max-width: 480px){
-    nav{
-        .logo {
-            flex-flow: column;
-            padding: 0;
-            padding-top: 32px;
-            text-align: center;
-        }
-        .nav-bar {
-            flex-flow: column;
-            padding: 0;
-            border-width: 0;
-            text-align: center;
-            font-size: $spacing;
-        }
-    }
-    .content-page{
-        .caracteristicas{
-            h2{
-                font-size: large;
-            }
-            p{
-                font-size: medium;
-            }
-            padding: 0;
-            margin: 0;
-            padding-top: 16px;
-        }
-    }
-    .contenedor-items{
-        display: grid;
-        grid-template-columns: 1fr;
-        padding: 16px;
-    }
-    .seccion-ubicacion{
-        display: flex;
-        flex-flow: column;
-        justify-content: center;
-    }
-    .ubicacion-image{
-        padding: $spacing*2;
-        margin: $spacing*2;
-     }
-} 
     
     
     

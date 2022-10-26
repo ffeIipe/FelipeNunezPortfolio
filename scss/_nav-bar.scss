@@ -4,6 +4,10 @@ nav{
         padding: $spacing;
         margin: $spacing;
         border: solid 1px;
+        transition-property: all;
+        transition-delay: 0ms;
+        transition-duration: 50ms;
+        transition-timing-function: ease-in-out;
     }
     .boton-primario{
         @extend .boton;
@@ -16,8 +20,13 @@ nav{
     .logo{
         a{
             padding: $spacing*4;
+            padding-top: 0; 
             @include flex;
         }
+    }
+    .boton:hover{
+        transform: scale(1.1);
+        background-color: rgb(187, 187, 187);
     }
     .nav-bar{
         padding: $spacing*2;
