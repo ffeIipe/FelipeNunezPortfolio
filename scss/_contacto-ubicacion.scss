@@ -1,15 +1,13 @@
-.seccion-ubicacion{
+.seccion-ubicacion {
     padding-top: $spacing*8;
     flex-direction: row;
     @include flex;
 
-    .ubicacion{
+    .ubicacion {
         display: flex;
         flex-flow: row;
         justify-content: center;
         padding: $spacing*8;
     }
-    .ubicacion-image{
 
-    }
 }

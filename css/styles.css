@@ -209,3 +209,52 @@ h1 {
 
 .border:hover {
   transform: scale(1.1); }
+
+.log-in {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px; }
+  .log-in div {
+    border-radius: 5px;
+    background-color: #e9e9e9;
+    display: grid;
+    align-items: center;
+    height: fit-content;
+    padding: 16px; }
+    .log-in div h1 {
+      display: flex;
+      justify-content: center; }
+    .log-in div div {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      height: fit-content; }
+      .log-in div div div {
+        padding: 8px; }
+        .log-in div div div input {
+          padding: 8px;
+          border-color: black;
+          border-width: 1px;
+          border-radius: 5px; }
+      .log-in div div .except {
+        width: 300px;
+        text-align: center; }
+      .log-in div div a {
+        text-decoration: none;
+        color: black;
+        font-weight: 400;
+        padding: 8px;
+        transition-property: all;
+        transition-delay: 0ms;
+        transition-duration: 50ms;
+        transition-timing-function: ease-in-out; }
+        .log-in div div a button {
+          border-width: 1px;
+          border-radius: 5px;
+          padding: 8px; }
+      .log-in div div a:hover {
+        transform: scale(1.1); }
+
+.register {
+  height: 600px; }

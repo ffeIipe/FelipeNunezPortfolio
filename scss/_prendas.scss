@@ -1,37 +1,33 @@
-nav{
-    h1{
+nav {
+    h1 {}
 
-    }
-    div{
-        ul{
+    div {
+        ul {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
             grid-column-gap: $spacing*8;
             justify-content: center;
 
-            a{
-                li{
+            a {
+                li {
                     display: inline-block;
                     padding: $spacing*4;
                     border: 1px;
                     font-family: 'Prompt', sans-serif;
                     border-radius: 5px;
-                    
+
                     margin-bottom: $spacing*4;
                     border: 1px;
                     border-style: solid;
                     border-color: rgb(0, 0, 0) !important;
-                    transition-property: all;
-                    transition-delay: 0ms;
-                    transition-duration: 50ms;
-                    transition-timing-function: ease-in-out;
+                    @include animation;
 
-                    img{
+                    img {
                         text-decoration: none;
-                        list-style-type: none; 
+                        list-style-type: none;
                     }
                 }
-            }   
+            }
         }
-    }   
-} 
+    }
+}

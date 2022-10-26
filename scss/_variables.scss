@@ -3,15 +3,25 @@
     justify-content: center;
 }
 
+@mixin animation {
+    transition-property: all;
+    transition-delay: 0ms;
+    transition-duration: 50ms;
+    transition-timing-function: ease-in-out;
+}
 
 $spacing: 8px;
 $font: 'Prompt', sans-serif;
-h1{
+
+h1 {
     font-size: 2em;
     display: flex;
     flex-direction: row;
 }
-.font{
+
+.font {
     font-family: $font;
 }
 
+$color-primario: black;
+$color-secundario: rgb(187, 187, 187);

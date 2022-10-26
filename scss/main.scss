@@ -6,25 +6,81 @@
 @import "contacto-ubicacion";
 @import "media-queries";
 
-button{
+button {
     border-radius: 5px !important;
 }
-.border{
-    border-color: black !important;
 
+.border {
+    border-color: black !important;
 }
-h1{
+
+h1 {
     margin: $spacing*2 !important;
 }
-.border:hover{
+
+.border:hover {
     transform: scale(1.1);
 }
 
+.log-in {
+    @include flex;
+    align-items: center;
+    height: 400px;
 
-    
-    
-    
-    
-    
-    
-  
+    div {
+        border-radius: 5px;
+        background-color: rgb(233, 233, 233);
+        display: grid;
+        align-items: center;
+        height: fit-content;
+        padding: $spacing*2;
+
+        h1 {
+            @include flex;
+        }
+
+        div {
+            @include flex;
+            flex-direction: column;
+            height: fit-content;
+
+            div {
+                padding: $spacing;
+
+                input {
+                    padding: $spacing;
+                    border-color: black;
+                    border-width: 1px;
+                    border-radius: 5px;
+                }
+            }
+
+            .except {
+                width: 300px;
+                text-align: center;
+            }
+
+            a {
+                text-decoration: none;
+                color: black;
+                font-weight: 400;
+                padding: $spacing;
+                @include animation;
+
+                button {
+                    border-width: 1px;
+                    border-radius: 5px;
+                    padding: $spacing;
+                }
+            }
+
+            a:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+
+.register {
+    height: 600px;
+}

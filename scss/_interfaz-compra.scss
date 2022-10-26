@@ -1,29 +1,31 @@
-.content-page{
-    div{
+.content-page {
+    div {
         width: auto;
         height: auto;
         padding: $spacing*8;
         display: flex;
 
-        img{
+        img {
             height: max-content;
             width: max-content;
         }
 
-        div{
+        div {
             padding-left: $spacing*8;
             padding-top: $spacing*2;
-            flex-direction: column; 
+            flex-direction: column;
         }
-        .precio{
+
+        .precio {
             font-weight: bolder;
             font-size: large;
         }
-        button{
+
+        button {
             height: max-content;
             width: max-content;
             border-width: 1px;
-            border-radius: $spacing/2;        
+            border-radius: $spacing/2;
         }
     }
 }
