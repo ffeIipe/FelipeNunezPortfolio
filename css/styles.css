@@ -6,6 +6,18 @@ h1 {
 .font {
   font-family: "Prompt", sans-serif; }
 
+nav .boton, nav .boton-primario, nav .boton-secundario {
+  border: 1px;
+  padding: 8px;
+  margin: 8px;
+  border: solid 1px; }
+
+nav .boton-primario {
+  border-color: #dee2e6; }
+
+nav .boton-secundario {
+  border-color: black; }
+
 nav .logo a {
   padding: 32px;
   display: flex;

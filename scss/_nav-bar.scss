@@ -1,4 +1,18 @@
 nav{
+    .boton{
+        border: 1px;
+        padding: $spacing;
+        margin: $spacing;
+        border: solid 1px;
+    }
+    .boton-primario{
+        @extend .boton;
+        border-color:#dee2e6;
+    }
+    .boton-secundario{
+        @extend .boton;
+        border-color: black;
+    }
     .logo{
         a{
             padding: $spacing*4;
