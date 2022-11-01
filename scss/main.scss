@@ -5,72 +5,36 @@
 @import "interfaz-compra";
 @import "contacto-ubicacion";
 @import "media-queries";
+@import "login-register";
 
-button {
-    border-radius: 5px !important;
+body{
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
-.border {
-    border-color: black !important;
-}
-
-h1 {
-    margin: $spacing*2 !important;
-}
-
-.border:hover {
-    transform: scale(1.1);
-}
-
-.log-in {
-    @include flex;
-    align-items: center;
-    height: 400px;
-
+.segundo-apartado {
     div {
-        border-radius: 5px;
-        background-color: rgb(233, 233, 233);
-        display: grid;
-        align-items: center;
-        height: fit-content;
-        padding: $spacing*2;
-
-        h1 {
-            @include flex;
-        }
-
         div {
             @include flex;
-            flex-direction: column;
-            height: fit-content;
-
-            div {
-                padding: $spacing;
-
-                input {
-                    padding: $spacing;
-                    border-color: black;
-                    border-width: 1px;
-                    border-radius: 5px;
-                }
-            }
-
-            .except {
-                width: 300px;
-                text-align: center;
-            }
+            margin-top: $spacing*8;
+            padding: $spacing*4;
 
             a {
                 text-decoration: none;
-                color: black;
-                font-weight: 400;
-                padding: $spacing;
+                list-style-type: none;
                 @include animation;
+                color: black;
 
-                button {
-                    border-width: 1px;
+                div {
+                    border: solid rgba(0, 0, 0, 0.5) 1px;
                     border-radius: 5px;
-                    padding: $spacing;
+                    margin: $spacing*4;
+                    flex-flow: column;
+                    align-items: center;
+
+                    p {
+                        font-size: $spacing*6;
+                    }
                 }
             }
 
@@ -79,8 +43,4 @@ h1 {
             }
         }
     }
-}
-
-.register {
-    height: 600px;
 }

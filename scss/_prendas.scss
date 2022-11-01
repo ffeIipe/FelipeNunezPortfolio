@@ -7,10 +7,14 @@ nav {
             grid-template-columns: 1fr 1fr 1fr;
             grid-column-gap: $spacing*8;
             justify-content: center;
+            justify-items: center;
+            padding: 0px 15% 0px 15%;
 
             a {
                 li {
-                    display: inline-block;
+                    display: flex;
+                    flex-flow: column wrap;
+                    align-items: flex-start;
                     padding: $spacing*4;
                     border: 1px;
                     font-family: 'Prompt', sans-serif;
@@ -25,6 +29,10 @@ nav {
                     img {
                         text-decoration: none;
                         list-style-type: none;
+                    }
+
+                    p {
+                        padding-top: $spacing;
                     }
                 }
             }

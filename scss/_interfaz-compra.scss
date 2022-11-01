@@ -1,9 +1,11 @@
 .content-page {
-    div {
+    .interfaz-page {
         width: auto;
         height: auto;
         padding: $spacing*8;
-        display: flex;
+        @include flex;
+
+
 
         img {
             height: max-content;
@@ -11,21 +13,25 @@
         }
 
         div {
-            padding-left: $spacing*8;
+            padding-left: $spacing*12;
             padding-top: $spacing*2;
             flex-direction: column;
+
+            .precio {
+                font-weight: bolder;
+                font-size: large;
+            }
+
+            button {
+                height: max-content;
+                width: max-content;
+                border-width: 1px;
+                border-radius: $spacing/2;
+            }
         }
 
-        .precio {
-            font-weight: bolder;
-            font-size: large;
-        }
 
-        button {
-            height: max-content;
-            width: max-content;
-            border-width: 1px;
-            border-radius: $spacing/2;
-        }
+
+
     }
 }
