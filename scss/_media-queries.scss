@@ -1,10 +1,4 @@
-@media screen and (max-width: 768px) {
-
-    div h1 {
-        font-size: 1em;
-        padding: 8px;
-    }
-
+@media screen and (max-width: 1024px) {
     nav {
         .logo {
             flex-flow: column;
@@ -16,7 +10,6 @@
         .nav-bar {
             text-align: center;
             font-size: 1em;
-            ;
         }
     }
 
@@ -30,6 +23,52 @@
             margin: 0;
             flex-flow: column;
             justify-content: center;
+            align-items: center;
+
+            .product-image {
+                width: 80%;
+                height: 80%;
+            }
+
+            .caracteristicas {
+                padding: 0;
+                margin: 0;
+                padding-top: 16px;
+            }
+        }
+    }
+
+    .segundo-apartado {
+        transform: scale(0.90);
+    }
+
+    .seccion-ubicacion {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .contenedor-items {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 16px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .content-page {
+        flex-flow: column;
+        margin-top: 64px;
+        padding: 0;
+        justify-content: center;
+
+        .interfaz-page {
+            margin: 0;
+            flex-flow: column;
+            justify-content: center;
+            align-items: center;
 
             .product-image {
                 width: 80%;
@@ -64,15 +103,30 @@
         display: flex;
         flex-flow: column;
         justify-content: center;
+        align-items: center;
+
     }
 
-    .ubicacion-image {
-        padding: $spacing*2;
-        margin: $spacing*2;
+    .segundo-apartado {
+        div {
+            div {
+                flex-flow: column wrap;
+                justify-content: center;
+                align-content: center;
+
+            }
+        }
     }
+
+
 }
 
 @media screen and (max-width: 480px) {
+    body {
+        padding-left: 0% !important;
+        padding-right: 0% !important;
+    }
+
     nav {
         .logo {
             flex-flow: column;
@@ -92,9 +146,6 @@
 
     .content-page {
         .caracteristicas {
-            h2 {
-                font-size: large;
-            }
 
             p {
                 font-size: medium;
@@ -116,10 +167,29 @@
         display: flex;
         flex-flow: column;
         justify-content: center;
+
+        table {
+            transform: scale(0.8);
+        }
     }
 
-    .ubicacion-image {
-        padding: $spacing*2;
-        margin: $spacing*2;
+    .segundo-apartado {
+        div {
+            transform: scale(0.95);
+
+            div {
+                flex-flow: column wrap;
+                justify-content: center;
+                align-content: center;
+
+                a {
+                    div {
+                        img {}
+                    }
+                }
+            }
+
+        }
+
     }
 }

@@ -20,6 +20,8 @@ body{
             padding: $spacing*4;
 
             a {
+                height: fit-content;
+                width: fit-content;
                 text-decoration: none;
                 list-style-type: none;
                 @include animation;
@@ -32,8 +34,8 @@ body{
                     flex-flow: column;
                     align-items: center;
 
-                    p {
-                        font-size: $spacing*6;
+                    h3 {
+                        padding-top: $spacing*3;
                     }
                 }
             }

@@ -98,9 +98,10 @@ footer {
 .content-page .interfaz-page {
   width: auto;
   height: auto;
-  padding: 64px;
+  padding-top: 64px;
+  padding-bottom: 64px;
   display: flex;
-  justify-content: center; }
+  justify-content: flex-start; }
   .content-page .interfaz-page img {
     height: max-content;
     width: max-content; }
@@ -108,14 +109,35 @@ footer {
     padding-left: 96px;
     padding-top: 16px;
     flex-direction: column; }
+    .content-page .interfaz-page div h2 {
+      padding-top: 8px;
+      padding-bottom: 16px; }
     .content-page .interfaz-page div .precio {
-      font-weight: bolder;
-      font-size: large; }
+      padding-top: 8px;
+      padding-bottom: 16px;
+      font-size: 1.5em; }
+    .content-page .interfaz-page div p {
+      font-size: 16px;
+      padding-top: 8px;
+      padding-bottom: 16px; }
     .content-page .interfaz-page div button {
       height: max-content;
       width: max-content;
       border-width: 1px;
       border-radius: 4px; }
+
+.content-page .tabla-info {
+  width: 100%;
+  margin-bottom: 64px;
+  font-size: 16px; }
+  .content-page .tabla-info tr td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 16px; }
+  .content-page .tabla-info tr th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 16px; }
 
 .seccion-ubicacion {
   padding-top: 64px;
@@ -124,14 +146,23 @@ footer {
   justify-content: center; }
   .seccion-ubicacion .ubicacion {
     display: flex;
-    flex-flow: row;
+    flex-flow: column;
     justify-content: center;
-    padding: 64px; }
+    align-items: center;
+    padding: 0, 64px, 64px, 64px; }
+    .seccion-ubicacion .ubicacion h1 {
+      margin-top: 0 !important; }
+    .seccion-ubicacion .ubicacion table tr th {
+      text-align: center;
+      padding: 16px;
+      width: 50%; }
+      .seccion-ubicacion .ubicacion table tr th p {
+        font-weight: 100; }
+  .seccion-ubicacion img {
+    width: auto;
+    height: auto; }
 
-@media screen and (max-width: 768px) {
-  div h1 {
-    font-size: 1em;
-    padding: 8px; }
+@media screen and (max-width: 1024px) {
   nav .logo {
     flex-flow: column;
     padding: 0;
@@ -148,7 +179,38 @@ footer {
     .content-page .interfaz-page {
       margin: 0;
       flex-flow: column;
-      justify-content: center; }
+      justify-content: center;
+      align-items: center; }
+      .content-page .interfaz-page .product-image {
+        width: 80%;
+        height: 80%; }
+      .content-page .interfaz-page .caracteristicas {
+        padding: 0;
+        margin: 0;
+        padding-top: 16px; }
+  .segundo-apartado {
+    transform: scale(0.9); }
+  .seccion-ubicacion {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center; }
+  .contenedor-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 16px; } }
+
+@media screen and (max-width: 768px) {
+  .content-page {
+    flex-flow: column;
+    margin-top: 64px;
+    padding: 0;
+    justify-content: center; }
+    .content-page .interfaz-page {
+      margin: 0;
+      flex-flow: column;
+      justify-content: center;
+      align-items: center; }
       .content-page .interfaz-page .product-image {
         width: 80%;
         height: 80%; }
@@ -169,12 +231,17 @@ footer {
   .seccion-ubicacion {
     display: flex;
     flex-flow: column;
-    justify-content: center; }
-  .ubicacion-image {
-    padding: 16px;
-    margin: 16px; } }
+    justify-content: center;
+    align-items: center; }
+  .segundo-apartado div div {
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: center; } }
 
 @media screen and (max-width: 480px) {
+  body {
+    padding-left: 0% !important;
+    padding-right: 0% !important; }
   nav .logo {
     flex-flow: column;
     padding: 0;
@@ -190,8 +257,6 @@ footer {
     padding: 0;
     margin: 0;
     padding-top: 16px; }
-    .content-page .caracteristicas h2 {
-      font-size: large; }
     .content-page .caracteristicas p {
       font-size: medium; }
   .contenedor-items {
@@ -202,12 +267,18 @@ footer {
     display: flex;
     flex-flow: column;
     justify-content: center; }
-  .ubicacion-image {
-    padding: 16px;
-    margin: 16px; } }
+    .seccion-ubicacion table {
+      transform: scale(0.8); }
+  .segundo-apartado div {
+    transform: scale(0.95); }
+    .segundo-apartado div div {
+      flex-flow: column wrap;
+      justify-content: center;
+      align-content: center; } }
 
 button {
-  border-radius: 5px !important; }
+  border-radius: 5px !important;
+  border-width: 1px; }
 
 .border {
   border-color: black !important; }
@@ -277,6 +348,8 @@ body {
   margin-top: 64px;
   padding: 32px; }
   .segundo-apartado div div a {
+    height: fit-content;
+    width: fit-content;
     text-decoration: none;
     list-style-type: none;
     transition-property: all;
@@ -290,7 +363,7 @@ body {
       margin: 32px;
       flex-flow: column;
       align-items: center; }
-      .segundo-apartado div div a div p {
-        font-size: 48px; }
+      .segundo-apartado div div a div h3 {
+        padding-top: 24px; }
   .segundo-apartado div div a:hover {
     transform: scale(1.1); }
