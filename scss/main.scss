@@ -6,43 +6,10 @@
 @import "contacto-ubicacion";
 @import "media-queries";
 @import "login-register";
+@import "segundo-apartado";
 
-body{
+body {
     padding-left: 10%;
     padding-right: 10%;
 }
 
-.segundo-apartado {
-    div {
-        div {
-            @include flex;
-            margin-top: $spacing*8;
-            padding: $spacing*4;
-
-            a {
-                height: fit-content;
-                width: fit-content;
-                text-decoration: none;
-                list-style-type: none;
-                @include animation;
-                color: black;
-
-                div {
-                    border: solid rgba(0, 0, 0, 0.5) 1px;
-                    border-radius: 5px;
-                    margin: $spacing*4;
-                    flex-flow: column;
-                    align-items: center;
-
-                    h3 {
-                        padding-top: $spacing*3;
-                    }
-                }
-            }
-
-            a:hover {
-                transform: scale(1.1);
-            }
-        }
-    }
-}
