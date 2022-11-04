@@ -249,7 +249,7 @@ footer {
   .segundo-apartado .contenedor-apartado {
     flex-direction: column; }
     .segundo-apartado .contenedor-apartado .tarjeta {
-      margin-top: 32px !important; }
+      margin-top: 48px !important; }
   .seccion-ubicacion {
     display: flex;
     flex-flow: column;
@@ -295,7 +295,9 @@ footer {
     display: flex;
     flex-flow: column;
     justify-content: center;
-    align-items: center; } }
+    align-items: center; }
+  .segundo-apartado .contenedor-apartado .tarjeta {
+    transform: scale(0.9); } }
 
 @media screen and (max-width: 480px) {
   body {
@@ -335,7 +337,9 @@ footer {
     flex-flow: column;
     justify-content: center; }
     .seccion-ubicacion table {
-      transform: scale(0.8); } }
+      transform: scale(0.8); }
+  .segundo-apartado .contenedor-apartado .tarjeta {
+    transform: scale(0.8); } }
 
 button {
   border-radius: 5px !important;
@@ -410,6 +414,7 @@ h1 {
   width: 100%; }
   .segundo-apartado .contenedor-apartado .tarjeta {
     padding: 32px;
+    padding-bottom: 0;
     margin: auto;
     margin-top: 128px;
     border: solid rgba(0, 0, 0, 0.5) 1px;

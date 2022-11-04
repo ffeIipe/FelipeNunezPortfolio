@@ -53,7 +53,7 @@
         .contenedor-apartado{
             flex-direction: column;
             .tarjeta{
-                margin-top: $spacing*4 !important;
+                margin-top: $spacing*6 !important;
             }
         }
         
@@ -139,6 +139,11 @@
     }
 
     .segundo-apartado {
+        .contenedor-apartado{
+            .tarjeta{
+                transform: scale(0.9);
+            }
+        }
         
     }
 }
@@ -215,8 +220,11 @@
     }
 
     .segundo-apartado {
+        .contenedor-apartado{
+            .tarjeta{
+                transform: scale(0.8);
 
-
-
+            }
+        }
     }
 }
