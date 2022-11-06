@@ -1,6 +1,8 @@
 .segundo-apartado {
+    margin-top: $spacing*12;
 
     .contenedor-apartado {
+        align-items: center;
         @include flex;
         @include animation;
         height: auto;
@@ -9,8 +11,8 @@
         .tarjeta {
             padding: $spacing*4;
             padding-bottom: 0;
-            margin: auto;
-            margin-top: $spacing*16;
+            margin-left: $spacing*8;
+            margin-right: $spacing*8;
             border: solid rgba(0, 0, 0, 0.5) 1px;
             border-radius: 5px;
             max-width: 364px;
@@ -40,7 +42,7 @@
         }
 
         div:hover {
-            transform: scale(1.1);
+            transform: scale(1.05);
         }
     }
 }

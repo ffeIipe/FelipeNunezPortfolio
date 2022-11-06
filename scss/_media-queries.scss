@@ -50,13 +50,14 @@
     }
 
     .segundo-apartado {
-        .contenedor-apartado{
+        .contenedor-apartado {
             flex-direction: column;
-            .tarjeta{
+
+            .tarjeta {
                 margin-top: $spacing*6 !important;
             }
         }
-        
+
     }
 
     .seccion-ubicacion {
@@ -88,7 +89,7 @@
             align-items: center;
             padding: 0%;
 
-            
+
 
             div {
                 .fotos-producto {
@@ -109,8 +110,8 @@
         }
 
         table {
-            margin-top:$spacing*4;
-            margin-bottom:$spacing*4;
+            margin-top: $spacing*4;
+            margin-bottom: $spacing*4;
         }
     }
 
@@ -139,12 +140,30 @@
     }
 
     .segundo-apartado {
-        .contenedor-apartado{
-            .tarjeta{
+        .contenedor-apartado {
+            .tarjeta {
                 transform: scale(0.9);
             }
         }
-        
+
+    }
+
+    .navbar {
+        display: flex !important;
+        flex-flow: column !important;
+        align-items: flex-start !important;
+
+        .container-fluid {
+            padding: 0;
+            padding-bottom: $spacing;
+        }
+
+        .dropdown {
+            .dropdown-menu {
+                left: 0;
+                right: unset;
+            }
+        }
     }
 }
 
@@ -192,8 +211,8 @@
         }
 
         table {
-            margin-top:$spacing*4;
-            margin-bottom:$spacing*4;
+            margin-top: $spacing*4;
+            margin-bottom: $spacing*4;
         }
 
         .caracteristicas {
@@ -220,8 +239,8 @@
     }
 
     .segundo-apartado {
-        .contenedor-apartado{
-            .tarjeta{
+        .contenedor-apartado {
+            .tarjeta {
                 transform: scale(0.8);
 
             }

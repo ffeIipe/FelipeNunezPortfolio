@@ -1,5 +1,14 @@
 nav {
-    h1 {}
+    h1 {
+        margin: 0 !important;
+        padding-top: $spacing*8;
+        padding-bottom: $spacing;
+    }
+
+    .deco {
+        margin: 0;
+        padding-bottom: $spacing*8;
+    }
 
     div {
         ul {
@@ -11,29 +20,50 @@ nav {
             padding: 0px 15% 0px 15%;
 
             a {
+                text-decoration: none;
+                list-style-type: none;
+                color: black;
+
                 li {
+                    width: 250px;
+                    height: 350px;
                     display: flex;
-                    flex-flow: column wrap;
-                    align-items: flex-start;
-                    padding: $spacing*4;
+                    align-items: center;
+                    justify-content: center;
+                    flex-flow: column nowrap;
+                    padding-bottom: 0;
                     border: 1px;
                     font-family: 'Prompt', sans-serif;
                     border-radius: 5px;
-
                     margin-bottom: $spacing*4;
                     border: 1px;
-                    border-style: solid;
-                    border-color: rgb(0, 0, 0) !important;
                     @include animation;
 
                     img {
-                        text-decoration: none;
-                        list-style-type: none;
+                        max-height: 150px;
+                        max-width: 150px;
+                        justify-content: center;
                     }
 
-                    p {
-                        padding-top: $spacing;
+                    div {
+                        max-width: 150px;
+                        max-height: 150px;
+                        align-items: flex-start;
+                        justify-content: space-around;
+
+                        h5 {
+                            font-size: $spacing*2;
+                            padding-top: $spacing*2;
+                            width: 100%;
+                            font-weight: 800;
+                        }
+
+                        p {
+                            margin: 0;
+                        }
+
                     }
+
                 }
             }
         }

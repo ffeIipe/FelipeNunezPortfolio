@@ -1,3 +1,28 @@
+.navbar {
+    display: flex !important;
+    flex-flow: row nowrap !important;
+    justify-content: space-between !important;
+
+    .container-fluid {
+        padding: 0;
+
+    }
+
+    .dropdown {
+        .btn{
+            background-color: #EFEFEF;
+            color: black;
+            
+
+        }
+        .dropdown-menu {
+            right: 0;
+            left: unset;
+        }
+       
+    }
+}
+
 nav {
     .boton {
         border: 1px;
@@ -31,6 +56,7 @@ nav {
     }
 
     .nav-bar {
+        margin: 0;
         padding: $spacing*2;
         border-radius: 5px;
         display: flex;
@@ -41,7 +67,6 @@ nav {
         border: 1px;
         border-style: solid;
         border-color: rgba(0, 0, 0, 0.5);
-        margin: $spacing;
 
         div {
             a {
@@ -52,13 +77,14 @@ nav {
                 color: black;
                 font-weight: bolder;
             }
+
             a:focus {
-                color:rgb(187, 187, 187);
+                color: rgb(187, 187, 187);
             }
         }
 
         div:hover {
             transform: scale(1.1);
-        } 
+        }
     }
 }
