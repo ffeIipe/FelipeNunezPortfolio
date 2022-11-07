@@ -127,9 +127,12 @@ nav div ul {
           margin: 0; }
 
 footer {
+  margin-top: 64px !important;
+  padding: 4px;
+  color: white;
+  background-color: black;
   margin: 0;
-  font-size: larger;
-  font-weight: 700;
+  text-align: center;
   display: flex;
   justify-content: center; }
 
@@ -395,7 +398,10 @@ footer {
     .seccion-ubicacion iframe {
       transform: scale(0.7); }
   .segundo-apartado .contenedor-apartado .tarjeta {
-    transform: scale(0.8); } }
+    transform: scale(0.8); }
+  footer {
+    margin: 0 !important;
+    font-size: 0.6em; } }
 
 button {
   border-radius: 5px !important;
