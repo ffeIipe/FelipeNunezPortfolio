@@ -38,11 +38,13 @@ nav {
                     margin-bottom: $spacing*4;
                     border: 1px;
                     @include animation;
+                box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 
                     img {
                         max-height: 150px;
                         max-width: 150px;
                         justify-content: center;
+                        border-radius: 5px;
                     }
 
                     div {

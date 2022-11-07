@@ -191,6 +191,7 @@
             border-width: 0;
             text-align: center;
             font-size: $spacing;
+            box-shadow: none;
         }
     }
 
@@ -232,18 +233,20 @@
         padding: 16px;
     }
 
-    .seccion-ubicacion {
-        display: flex;
-        flex-flow: column;
-        justify-content: center;
-        transform: scale(0.8);
+    #sector-ubicacion {
+        .seccion-ubicacion {
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            transform: scale(0.8);
 
-        .ubicacion {
-            h1 {
-                padding-top: 0;
+            .ubicacion {
+                h1 {
+                    padding-top: 0;
+
+                }
 
             }
-
         }
 
         iframe {
@@ -259,7 +262,8 @@
             }
         }
     }
-    footer{
+
+    footer {
         margin: 0 !important;
         font-size: 0.6em;
     }
