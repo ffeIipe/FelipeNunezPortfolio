@@ -132,6 +132,7 @@
     }
 
     .seccion-ubicacion {
+        padding-top: 0 !important;
         display: flex;
         flex-flow: column;
         justify-content: center;
@@ -140,8 +141,11 @@
     }
 
     .segundo-apartado {
+        margin-top: 0 !important;
+
         .contenedor-apartado {
             .tarjeta {
+                margin-top: 0 !important;
                 transform: scale(0.9);
             }
         }
@@ -232,9 +236,18 @@
         display: flex;
         flex-flow: column;
         justify-content: center;
+        transform: scale(0.8);
 
-        table {
-            transform: scale(0.8);
+        .ubicacion {
+            h1 {
+                padding-top: 0;
+
+            }
+
+        }
+
+        iframe {
+            transform: scale(0.7);
         }
     }
 
