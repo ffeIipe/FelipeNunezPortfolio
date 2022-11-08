@@ -19,6 +19,7 @@
                 width: 100%;
                 height: auto;
                 border-radius: 5px;
+                box-shadow: 1px 1px 4px rgba(0,0,0,0.5);
 
                 .product-image {
                     width: 100%;
@@ -35,6 +36,7 @@
                 .foto1 {
                     padding-right: $spacing*4;
                     @include animation;
+                    
 
                     i {
                         max-height: 150px;
@@ -49,6 +51,10 @@
                             padding: 0;
                             margin: 0;
                             border-radius: 5px;
+                            box-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+                        }
+                        img:hover {
+                            opacity: .5;
                         }
                     }
                 }
@@ -69,6 +75,10 @@
                             padding: 0;
                             margin: 0;
                             border-radius: 5px;
+                            box-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+                        }
+                        img:hover {
+                            opacity: .5;
                         }
                     }
                 }
@@ -102,10 +112,14 @@
             }
 
             button {
-                height: max-content;
-                width: max-content;
-                border-width: 1px;
-                border-radius: $spacing/2;
+                background-color: white;
+                border: none;
+                border-radius: 5px;
+                padding: $spacing;
+                box-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+            }
+            button:hover {
+                opacity: 0.5;
             }
         }
     }
@@ -130,8 +144,4 @@
             }
         }
     }
-}
-
-.foto1 .foto2:hover {
-    transform: scale(1.1);
 }

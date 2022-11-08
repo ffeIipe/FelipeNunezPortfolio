@@ -6,14 +6,24 @@
     .container-fluid {
         padding: 0;
 
+        button {
+            border: none;
+            box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+            background-color: white;
+        }
+
+        button:hover {
+            opacity: 0.5;
+        }
+
     }
 
     .dropdown {
         .btn {
-            background-color: #EFEFEF;
+            background-color: white;
             color: black;
-
-
+            border: none;
+            box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
         }
 
         .dropdown-menu {
@@ -21,26 +31,62 @@
             left: unset;
         }
 
+        .dropdown-menu:hover {
+            opacity: 1;
+
+        }
+    }
+
+    .dropdown:hover {
+        opacity: 0.5;
     }
 }
 
 nav {
-    .boton {
-        border: 1px;
-        padding: $spacing;
-        margin: $spacing;
-        border: solid 1px;
-        @include animation;
-    }
+    .top-page {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
 
-    .boton-primario {
-        @extend .boton;
-        border-color: #dee2e6;
-    }
+        .contenedor-top1 {
+            .boton {
+                padding: $spacing;
+                margin: $spacing;
+                background-color: white;
+                @include animation;
+            }
 
-    .boton-secundario {
-        @extend .boton;
-        border-color: black;
+            .boton-primario {
+                @extend .boton;
+                border-color: white;
+                box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+            }
+
+            .boton-secundario {
+                @extend .boton;
+                border-color: white;
+                box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+            }
+        }
+
+        .contenedor-top2 {
+            a {
+                .fa-cart-shopping:before {
+                    background-color: white;
+                    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+                    border-radius: 5px;
+                    width: 24px;
+                    margin: $spacing*2;
+                    padding: $spacing*2 !important;
+                    color: black;
+                }
+
+                .fa-cart-shopping:hover {
+                    opacity: .5;
+                    transform: scale(1.1)
+                }
+            }
+        }
     }
 
     .logo {
@@ -53,18 +99,22 @@ nav {
 
             img {
                 border-radius: 5px;
-                box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+                box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
             }
         }
     }
 
     .logo:hover {
         transform: scale(1.1);
+
+        img:hover {
+            opacity: 0.5;
+        }
     }
 
     .boton:hover {
         transform: scale(1.1);
-        background-color: rgb(187, 187, 187);
+        opacity: 0.5;
     }
 
     .nav-bar {
@@ -76,19 +126,17 @@ nav {
         justify-content: space-around;
         list-style-type: none;
         text-decoration: none;
-        border: 1px;
-        border-style: solid;
-        border-color: rgba(0, 0, 0, 0.5);
-        box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
 
         div {
             @include animation;
+
             a {
                 font-size: 1.3em;
                 text-decoration: none;
                 font-size: large;
                 color: black;
-                font-weight: bolder;
+                font-weight: 600;
             }
 
             a:focus {
@@ -98,6 +146,7 @@ nav {
 
         div:hover {
             transform: scale(1.1);
+            opacity: 0.5;
         }
     }
 }

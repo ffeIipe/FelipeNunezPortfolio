@@ -12,6 +12,7 @@ body {
     padding-left: 10%;
     padding-right: 10%;
 }
+
 .carousel-inner {
     div {
         a {
@@ -22,3 +23,35 @@ body {
     }
 }
 
+.carrito {
+    .contenedor-carrito {
+        border-radius: 5px;
+        box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+
+        h5 {
+            padding: $spacing*2;
+        }
+    }
+
+    .volver {
+        padding-top: $spacing*8;
+     
+        a {
+            list-style-type: none;
+            text-decoration: none;
+
+            button {
+                border: none;
+                background-color: white;
+                box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+                padding: $spacing;
+                @include flex;
+            }
+    
+            button:hover {
+                transform: scale(1.1);
+                opacity: .5;
+            }
+        }      
+    }
+}

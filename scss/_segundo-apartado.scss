@@ -13,12 +13,12 @@
             padding-bottom: 0;
             margin-left: $spacing*8;
             margin-right: $spacing*8;
-            border: solid rgba(0, 0, 0, 0.5) 1px;
             border-radius: 5px;
             max-width: 364px;
             height: auto;
             width: 100%;
             @include animation;
+            box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
 
             a {
                 @include flex;
@@ -45,6 +45,7 @@
 
         div:hover {
             transform: scale(1.04);
+            opacity: 0.5;
             
         }
     }
