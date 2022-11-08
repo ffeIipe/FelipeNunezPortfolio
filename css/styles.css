@@ -132,6 +132,7 @@ nav div ul {
     list-style-type: none;
     color: black; }
     nav div ul a li {
+      border: none;
       width: 250px;
       height: 350px;
       display: flex;
