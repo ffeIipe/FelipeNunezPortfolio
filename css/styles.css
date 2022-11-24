@@ -31,60 +31,65 @@ h1 {
   .navbar .dropdown:hover {
     opacity: 0.5; }
 
-nav .top-page {
+header .top-page {
   display: flex;
   justify-content: space-between;
   align-items: center; }
-  nav .top-page .contenedor-top1 .boton, nav .top-page .contenedor-top1 .boton-primario, nav .top-page .contenedor-top1 .boton-secundario {
-    padding: 8px;
-    margin: 8px;
-    background-color: white;
-    transition-property: all;
-    transition-delay: 0ms;
-    transition-duration: 50ms;
-    transition-timing-function: ease-in-out; }
-  nav .top-page .contenedor-top1 .boton-primario {
-    border-color: white;
-    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5); }
-  nav .top-page .contenedor-top1 .boton-secundario {
-    border-color: white;
-    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5); }
-  nav .top-page .contenedor-top2 a .fa-cart-shopping:before {
-    background-color: white;
-    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
-    border-radius: 5px;
-    width: 24px;
-    margin: 16px;
-    padding: 16px !important;
-    color: black; }
-  nav .top-page .contenedor-top2 a .fa-cart-shopping:hover {
-    opacity: .5;
-    transform: scale(1.1); }
 
-nav .logo {
+header .contenedor-top1 .boton, header .contenedor-top1 .boton-primario, header .contenedor-top1 .boton-secundario {
+  padding: 8px;
+  margin: 8px;
+  background-color: white;
   transition-property: all;
   transition-delay: 0ms;
   transition-duration: 50ms;
   transition-timing-function: ease-in-out; }
-  nav .logo a {
+
+header .contenedor-top1 .boton-primario {
+  border-color: white;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5); }
+
+header .contenedor-top1 .boton-secundario {
+  border-color: white;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5); }
+
+header .contenedor-top2 a .fa-cart-shopping:before {
+  background-color: white;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  width: 24px;
+  margin: 16px;
+  padding: 16px !important;
+  color: black; }
+
+header .contenedor-top2 a .fa-cart-shopping:hover {
+  opacity: .5;
+  transform: scale(1.1); }
+
+header .logo {
+  transition-property: all;
+  transition-delay: 0ms;
+  transition-duration: 50ms;
+  transition-timing-function: ease-in-out; }
+  header .logo a {
     padding: 32px;
     padding-top: 0;
     display: flex;
     justify-content: center; }
-    nav .logo a img {
+    header .logo a img {
       border-radius: 5px;
       box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5); }
 
-nav .logo:hover {
+header .logo:hover {
   transform: scale(1.1); }
-  nav .logo:hover img:hover {
+  header .logo:hover img:hover {
     opacity: 0.5; }
 
-nav .boton:hover, nav .top-page .contenedor-top1 .boton-primario:hover, nav .top-page .contenedor-top1 .boton-secundario:hover {
+header .boton:hover, header .contenedor-top1 .boton-primario:hover, header .contenedor-top1 .boton-secundario:hover {
   transform: scale(1.1);
   opacity: 0.5; }
 
-nav .nav-bar {
+header .nav-bar {
   margin: 0;
   padding: 16px;
   border-radius: 5px;
@@ -94,20 +99,20 @@ nav .nav-bar {
   list-style-type: none;
   text-decoration: none;
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5); }
-  nav .nav-bar div {
+  header .nav-bar div {
     transition-property: all;
     transition-delay: 0ms;
     transition-duration: 50ms;
     transition-timing-function: ease-in-out; }
-    nav .nav-bar div a {
+    header .nav-bar div a {
       font-size: 1.3em;
       text-decoration: none;
       font-size: large;
       color: black;
       font-weight: 600; }
-    nav .nav-bar div a:focus {
+    header .nav-bar div a:focus {
       color: #bbbbbb; }
-  nav .nav-bar div:hover {
+  header .nav-bar div:hover {
     transform: scale(1.1);
     opacity: 0.5; }
 
@@ -527,6 +532,9 @@ h1 {
 
 .register {
   height: fit-content; }
+
+#carouselExampleControls {
+  margin-top: 64px; }
 
 .segundo-apartado {
   margin-top: 96px; }

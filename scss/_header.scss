@@ -41,13 +41,12 @@
         opacity: 0.5;
     }
 }
-
-nav {
+header{
     .top-page {
         display: flex;
         justify-content: space-between;
         align-items: center;
-
+    }
         .contenedor-top1 {
             .boton {
                 padding: $spacing;
@@ -87,7 +86,7 @@ nav {
                 }
             }
         }
-    }
+
 
     .logo {
         @include animation;
@@ -150,3 +149,6 @@ nav {
         }
     }
 }
+
+
+    
